@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
+@import "@angular/material/prebuilt-themes/purple-green.css";
+
 h1 {
     color: #369;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,3 +23,5 @@ h1 {
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
