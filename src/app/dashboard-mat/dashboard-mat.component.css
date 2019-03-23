@@ -19,3 +19,8 @@
 .dashboard-card-content {
   text-align: center;
 }
+
+.mat-h1 {
+  color: white;
+  text-align: center;
+}

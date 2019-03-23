@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpClientModule }    from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatInputModule, MatSelectModule, MatRadioModule, MatCardModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatMenuModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatInputModule, MatSelectModule, MatRadioModule, MatCardModule, MatTabsModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatMenuModule} from '@angular/material';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
@@ -21,6 +21,7 @@ import { TableMatComponent } from './table-mat/table-mat.component';
 import { DashboardMatComponent } from './dashboard-mat/dashboard-mat.component';
 import { DragDropMatComponent } from './drag-drop-mat/drag-drop-mat.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { TabNavBarBasicExampleComponent } from './tab-nav-bar-basic-example/tab-nav-bar-basic-example.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     NavMatComponent,
     TableMatComponent,
     DashboardMatComponent,
-    DragDropMatComponent
+    DragDropMatComponent,
+    TabNavBarBasicExampleComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     ),
     BrowserAnimationsModule,
     MatButtonModule, 
-    MatCheckboxModule, MatInputModule, MatSelectModule, MatRadioModule, MatCardModule, ReactiveFormsModule, LayoutModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatMenuModule, DragDropModule
+    MatCheckboxModule, MatInputModule, MatSelectModule, MatRadioModule, MatCardModule, MatTabsModule, ReactiveFormsModule, LayoutModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule, MatGridListModule, MatMenuModule, DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
