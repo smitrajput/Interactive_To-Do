@@ -9,10 +9,18 @@ import {Component} from '@angular/core';
   styleUrls: ['tab-nav-bar-basic-example.component.css'],
 })
 export class TabNavBarBasicExampleComponent {
-  links = ['Top Priorities', 'To-Do List', 'Task Details'];
+  links = [
+    {
+      label: 'Top Priorities',
+      url: "/dashboard"
+    }, {
+      label: 'To-Do List',
+      url: "/todolist",
+     }
+  ];
   activeLink = this.links[0];
   background = '';
-  linkUrls = ["/dashboard", "/heroes", "/details/:id"];
+  linkUrls = ["/dashboard", "/todolist", "/details/:id"];
 
   toggleBackground() {
     this.background = this.background ? '' : 'primary';

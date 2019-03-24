@@ -1,17 +1,34 @@
 <div class="container">
-  <h2>To do</h2>
 
-  <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo"
+  <div>
+      <!-- <input #heroName /> -->
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Task to do" #heroName>
+        </mat-form-field>
+        <button class="add-button" mat-raised-button color="primary" (click)="add(heroName.value); heroName.value=''">
+          Add
+        </button>
+      </form>
+    <!-- (click) passes input value to add() and then clears the input -->
+    
+  </div>
+
+  <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="heroes"
       [cdkDropListConnectedTo]="doneList" class="list" (cdkDropListDropped)="drop($event)">
-    <div class="list-item" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+    <div class="list-item" *ngFor="let item of heroes" cdkDrag>
+      {{item.name}}
+      <button mat-raised-button color="primary" class="delete" title="delete item"
+      (click)="delete(item)">Remove</button>
+    </div> 
   </div>
 </div>
 
-<div class="container">
-  <h2>Done</h2>
+<!-- <div class="container">
+  <h2 class="header">Done</h2>
 
-  <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done"
+  <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="heroesDone"
       [cdkDropListConnectedTo]="todoList" class="list" (cdkDropListDropped)="drop($event)">
-    <div class="list-item" *ngFor="let item of done" cdkDrag>{{item}}</div>
+    <div class="list-item" *ngFor="let item of heroesDone" cdkDrag>{{item.name}}</div>
   </div>
-</div>
+</div> -->
