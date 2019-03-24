@@ -27,3 +27,15 @@ h1 {
   nav a.active {
     color: #039be5;
   }
+
+  .app-name {
+    color:white;
+    background-color: darkmagenta;
+    padding: 1.5%;
+  }
+
+  .spech1{
+    color:white;
+    text-align: center;
+    font-size: 2.5em;
+  }

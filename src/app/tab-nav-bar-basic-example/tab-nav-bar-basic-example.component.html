@@ -2,5 +2,5 @@
   <a mat-tab-link *ngFor="let link of links; let i=index"
      (click)="activeLink = link"
      [active]="activeLink == link"
-     routerLink=linkUrls[i]> {{link}} </a>
+     [routerLink]="link.url"> {{link.label}} </a>
 </nav>
