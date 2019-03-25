@@ -17,6 +17,10 @@ An interactive to-do application, created using Angular and its Material Design,
 
 ### App Demo
 
+#### TL;DR
+![](ezgif.com-gif-maker.gif)
+
+#### To be more specific
 The Dashboard  :tada: :tada: :tada: 
 ![dash1](https://user-images.githubusercontent.com/22425782/54904390-6c7b6380-4f04-11e9-9cbc-849b36734328.jpeg)
 This is the page(also the *Top Priorities* tab), where your top 4 priorities will be displayed
