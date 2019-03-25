@@ -1,5 +1,5 @@
 # Interactive To-Do App
-An interactive to-do application, created using Angular and its Material Design, that helps you prioritize your tasks.
+An interactive to-do application, created using Angular and its Material Design, that helps you prioritize your tasks
 
 ### Prerequisite
 Node.js version 10.15.3
