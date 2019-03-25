@@ -2,7 +2,7 @@
 An interactive to-do application, created using Angular and its Material Design, that helps you prioritize your tasks.
 
 ### Prerequisite
-1. Node.js version 10.15.3
+Node.js version 10.15.3
 
 ### Steps to launch app locally
 
