@@ -6,8 +6,7 @@ An interactive to-do application, created using Angular and its Material Design,
 
 ### Steps to launch app locally
 
-1. On your terminal, type the following to clone this repository: <br/>  
-`git clone https://github.com/smitrajput/Interactive_To-Do.git`
+1. On your terminal, type the following to clone this repository: `https://github.com/smitrajput/Interactive_To-Do.git`
 2. Change into the project directory:  <br/> 
 `cd Interactive_To-Do`
 3. Install the dependencies:  <br/> 
